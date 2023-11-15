@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[49],{474:function(t,s,n){"use strict";n.r(s);var o=n(14),r=Object(o.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[t("img",{attrs:{src:"https://photo.tuchong.com/3050513/f/86180517.jpg",alt:"img"}})])])}),[],!1,null,null,null);s.default=r.exports}}]);

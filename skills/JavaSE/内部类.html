@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>内部类 | 琅玕的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="个人编程技术分享">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.3aadf512.css" as="style"><link rel="preload" href="/blog/assets/js/app.47fa0ee6.js" as="script"><link rel="preload" href="/blog/assets/js/3.08356745.js" as="script"><link rel="preload" href="/blog/assets/js/47.3b2e491e.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.acf34bf9.js"><link rel="prefetch" href="/blog/assets/js/11.8c03c2e4.js"><link rel="prefetch" href="/blog/assets/js/12.fb0988f5.js"><link rel="prefetch" href="/blog/assets/js/13.6e265d6e.js"><link rel="prefetch" href="/blog/assets/js/14.7b60b543.js"><link rel="prefetch" href="/blog/assets/js/15.d9e9bd6e.js"><link rel="prefetch" href="/blog/assets/js/16.b7893bb0.js"><link rel="prefetch" href="/blog/assets/js/17.4773109c.js"><link rel="prefetch" href="/blog/assets/js/18.459a270b.js"><link rel="prefetch" href="/blog/assets/js/19.d3c7faae.js"><link rel="prefetch" href="/blog/assets/js/2.da13ccd9.js"><link rel="prefetch" href="/blog/assets/js/20.a4baf78a.js"><link rel="prefetch" href="/blog/assets/js/21.a354fd1b.js"><link rel="prefetch" href="/blog/assets/js/22.e4d3b9a8.js"><link rel="prefetch" href="/blog/assets/js/23.627cbf1d.js"><link rel="prefetch" href="/blog/assets/js/24.7a44cb5b.js"><link rel="prefetch" href="/blog/assets/js/25.6e3b28f9.js"><link rel="prefetch" href="/blog/assets/js/26.f9b3152b.js"><link rel="prefetch" href="/blog/assets/js/27.784b605c.js"><link rel="prefetch" href="/blog/assets/js/28.4b72525f.js"><link rel="prefetch" href="/blog/assets/js/29.03a090ad.js"><link rel="prefetch" href="/blog/assets/js/30.87f31b47.js"><link rel="prefetch" href="/blog/assets/js/31.32d8ae6d.js"><link rel="prefetch" href="/blog/assets/js/32.bfad371d.js"><link rel="prefetch" href="/blog/assets/js/33.647699a4.js"><link rel="prefetch" href="/blog/assets/js/34.5cb04a9d.js"><link rel="prefetch" href="/blog/assets/js/35.b5d4b577.js"><link rel="prefetch" href="/blog/assets/js/36.29ac4304.js"><link rel="prefetch" href="/blog/assets/js/37.52204065.js"><link rel="prefetch" href="/blog/assets/js/38.6a6c7f56.js"><link rel="prefetch" href="/blog/assets/js/39.307f9452.js"><link rel="prefetch" href="/blog/assets/js/4.64cbfc8a.js"><link rel="prefetch" href="/blog/assets/js/40.c52cb9af.js"><link rel="prefetch" href="/blog/assets/js/41.9484b6bc.js"><link rel="prefetch" href="/blog/assets/js/42.7c1e3494.js"><link rel="prefetch" href="/blog/assets/js/43.a1db7bff.js"><link rel="prefetch" href="/blog/assets/js/44.ebebaf80.js"><link rel="prefetch" href="/blog/assets/js/45.0567c80f.js"><link rel="prefetch" href="/blog/assets/js/46.a6dd9b06.js"><link rel="prefetch" href="/blog/assets/js/48.a0987d85.js"><link rel="prefetch" href="/blog/assets/js/49.7e07c884.js"><link rel="prefetch" href="/blog/assets/js/5.c20cef8f.js"><link rel="prefetch" href="/blog/assets/js/50.4977422c.js"><link rel="prefetch" href="/blog/assets/js/51.7a95ac4e.js"><link rel="prefetch" href="/blog/assets/js/52.52e556b0.js"><link rel="prefetch" href="/blog/assets/js/53.4f36d2ba.js"><link rel="prefetch" href="/blog/assets/js/54.2c32102f.js"><link rel="prefetch" href="/blog/assets/js/6.bcbc4d6f.js"><link rel="prefetch" href="/blog/assets/js/7.53614ddc.js"><link rel="prefetch" href="/blog/assets/js/8.2353748c.js"><link rel="prefetch" href="/blog/assets/js/9.4cb3a25c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.3aadf512.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">琅玕的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/skills/" class="nav-link router-link-active">
+  学习
+</a></div><div class="nav-item"><a href="/blog/share/" class="nav-link">
+  资源分享
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/skills/" class="nav-link router-link-active">
+  学习
+</a></div><div class="nav-item"><a href="/blog/share/" class="nav-link">
+  资源分享
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/blog/skills/IoT" class="sidebar-heading clickable"><span>IoT</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/IoT/基于NodeMcu的智慧生态农业系统设计.html" class="sidebar-link">基于NodeMcu的智慧生态农业系统设计</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/JavaSE" class="sidebar-heading clickable router-link-active open"><span>JavaSE</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/JavaSE/File类和IO流.html" class="sidebar-link">File类和IO流</a></li><li><a href="/blog/skills/JavaSE/Java基础手写笔记.html" class="sidebar-link">/skills/JavaSE/Java基础手写笔记.html</a></li><li><a href="/blog/skills/JavaSE/Java常用API.html" class="sidebar-link">Java常用API</a></li><li><a href="/blog/skills/JavaSE/Thread.html" class="sidebar-link">Thread</a></li><li><a href="/blog/skills/JavaSE/内部类.html" class="active sidebar-link">内部类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/内部类.html#一、-成员内部类" class="sidebar-link">一、 成员内部类</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/内部类.html#二、-静态内部类" class="sidebar-link">二、 静态内部类</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/内部类.html#三、-局部内部类" class="sidebar-link">三、 局部内部类</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/内部类.html#四、-匿名内部类" class="sidebar-link">四、 匿名内部类</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/内部类.html#五、-lambda表达式" class="sidebar-link">五、 lambda表达式</a></li></ul></li><li><a href="/blog/skills/JavaSE/反射.html" class="sidebar-link">反射</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/DSDB" class="sidebar-heading clickable"><span>DSDB</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/DSDB/Collection.html" class="sidebar-link">Java的集合类</a></li><li><a href="/blog/skills/DSDB/HTTP&amp;Tomcat.html" class="sidebar-link">HTTP&amp;Tomcat</a></li><li><a href="/blog/skills/DSDB/JDBC.html" class="sidebar-link">JDBC</a></li><li><a href="/blog/skills/DSDB/Map.html" class="sidebar-link">Map</a></li><li><a href="/blog/skills/DSDB/Maven.html" class="sidebar-link">Maven</a></li><li><a href="/blog/skills/DSDB/Mybatis.html" class="sidebar-link">Mybatis</a></li><li><a href="/blog/skills/DSDB/SQL.html" class="sidebar-link">SQL</a></li><li><a href="/blog/skills/DSDB/Stream.html" class="sidebar-link">Stream</a></li><li><a href="/blog/skills/DSDB/前端.html" class="sidebar-link">前端</a></li><li><a href="/blog/skills/DSDB/数据库索引.html" class="sidebar-link">数据库索引</a></li><li><a href="/blog/skills/DSDB/连接池.html" class="sidebar-link">/skills/DSDB/连接池.html</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/JavaEE&amp;Spring" class="sidebar-heading clickable"><span>JavaEE&amp;Spring</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/JavaEE&amp;Spring/MyBatis-Spring.html" class="sidebar-link">MyBatis - Spring、Spring事务</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/Request&amp;Response.html" class="sidebar-link">Request &amp; Response</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/Servlet.html" class="sidebar-link">Servlet</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringAOP.html" class="sidebar-link">Spring AOP</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringBoot.html" class="sidebar-link">SpringBoot</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringIOC.html" class="sidebar-link">Spring IOC</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringMVC.html" class="sidebar-link">Spring MVC</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/设计模式.html" class="sidebar-link">设计模式</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/微服务" class="sidebar-heading clickable"><span>微服务</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/微服务/ElasticSearch.html" class="sidebar-link">ElasticSearch</a></li><li><a href="/blog/skills/微服务/Gateway.html" class="sidebar-link">Gateway</a></li><li><a href="/blog/skills/微服务/MapStruct.html" class="sidebar-link">MapStruct</a></li><li><a href="/blog/skills/微服务/Mybatis-Plus.html" class="sidebar-link">Mybatis-Plus</a></li><li><a href="/blog/skills/微服务/Nginx.html" class="sidebar-link">Nginx</a></li><li><a href="/blog/skills/微服务/Redis.html" class="sidebar-link">Redis</a></li><li><a href="/blog/skills/微服务/Redis在Java项目中的使用.html" class="sidebar-link">Redis在Java项目中的使用</a></li><li><a href="/blog/skills/微服务/RocketMQ.html" class="sidebar-link">RocketMQ</a></li><li><a href="/blog/skills/微服务/SpringCloud.html" class="sidebar-link">SpringCloud</a></li><li><a href="/blog/skills/微服务/微服务.html" class="sidebar-link">微服务</a></li><li><a href="/blog/skills/微服务/微服务架构和单体架构.html" class="sidebar-link">微服务架构和单体架构</a></li><li><a href="/blog/skills/微服务/秒杀.html" class="sidebar-link">秒杀</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/面试" class="sidebar-heading clickable"><span>面试</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/面试/面经.html" class="sidebar-link">面经</a></li><li><a href="/blog/skills/面试/面试准备.html" class="sidebar-link">面试准备</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="内部类"><a href="#内部类" class="header-anchor">#</a> 内部类</h1> <p>内部类的分类</p> <ol><li>成员内部类</li> <li>静态内部类</li> <li>局部内部类</li> <li>匿名内部类</li> <li>lambda表达式</li></ol> <h2 id="一、-成员内部类"><a href="#一、-成员内部类" class="header-anchor">#</a> 一、 成员内部类</h2> <ol><li>访问修饰符：四种访问修饰级别都可以。</li> <li>成员特点：
+(1) 成员内部类的对象必须在外围类的对象的基础上才能得到，想要得到内部类对象，就要先创建外围类。
+(2) 成员内部类没有静态声明。没有静态成员变量、静态成员方法，其他和普通子类一样。</li> <li>访问特点：
+<strong>(1) 在成员内部类中访问外围类成员</strong>（访问不受限制）
+直接访问。因为成员内部类对象拥有外围类对象的引用作为成员变量。
+<strong>(2) 在外围类中访问成员内部类成员</strong>（访问不受限制）
+I. 在外围类的静态上下文中访问成员内部类成员
+没有任何对象，需要先创建外围类的对象，然后在外围类的基础上创建成员内部类的对象。
+<code>InnerClazz ic = new EnclosedClazz().new InnerClazz();</code>
+II. 在外围类的非静态上下文中访问成员内部类成员
+拥有外围类对象，只需要创建成员内部类即可。
+<strong>(3) 在外部类中访问成员内部类成员</strong>（访问受限制）
+无论是静态上下文还是非静态上下文都没有该成员内部类对象，需要先创建外围类对象，然后再在外围类对象的基础上创建成员内部类对象。
+<code>EnclosedClazz.InnerClazz ic = new EnclosedClazz().new InnerClazz();</code></li></ol> <h2 id="二、-静态内部类"><a href="#二、-静态内部类" class="header-anchor">#</a> 二、 静态内部类</h2> <p>静态内部类和外围类之间的访问都不受权限的限制，没有任何依赖关系，想要访问就创建各自对象即可。</p> <ol><li><p>访问修饰符：四种访问修饰级别都可以。</p></li> <li><p>成员特点：
+和普通类没有区别。</p></li> <li><p>访问特点：
+<strong>(1) 在静态内部类中访问外围类成员</strong>（访问不受限制）
+创建外围类对象。</p> <p><strong>(2) 在外围类中访问静态内部类成员</strong>（访问不受限制）
+创建静态内部类对象。</p> <p><strong>(3) 在外部类中访问成员内部类成员</strong>（访问受限制）
+直接创建静态内部类对象
+<code>EnclosedClazz.NestedClazz nc = new EnclosedClazz.NestedClazz();</code></p></li></ol> <h2 id="三、-局部内部类"><a href="#三、-局部内部类" class="header-anchor">#</a> 三、 局部内部类</h2> <ol><li><p>访问权限修饰符：类似局部变量没有访问权限的概念。</p></li> <li><p>成员特点：
+和成员内部类完全一致，没有静态声明，可以定义用字面值常量赋值的<strong>全局常量</strong>（作用域的变量作为常量，事实常量）。</p> <blockquote><p>该变量在作用域的其他使用场景也是作为常量吗？还是说只在内部类中作为常量。</p></blockquote></li> <li><p>访问特点：
+<strong>(1) 局部内部类访问外围类</strong>
+I. 局部内部类在静态上下文中
+需要创建外围类对象
+II.局部内部类在非静态上下文中
+可以直接调用外围类成员
+<strong>(2) 外围内部类访问局部内部类</strong>
+受作用域的限制，必须在作用区内部才能访问局部内部类，创建对象。</p></li> <li><p>继承和实现</p></li></ol> <h2 id="四、-匿名内部类"><a href="#四、-匿名内部类" class="header-anchor">#</a> 四、 匿名内部类</h2> <div class="language-java extra-class"><pre class="language-java"><code>语法<span class="token operator">:</span>
+ <span class="token operator">*</span> <span class="token comment">// 局部位置</span>
+ <span class="token operator">*</span> <span class="token keyword">new</span> 类名或者接口名<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+ <span class="token operator">*</span>   <span class="token comment">// 某类名或接口名的子类的类体</span>
+ <span class="token operator">*</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ <span class="token operator">*</span> <span class="token comment">// 局部位置</span>
+</code></pre></div><ol><li>创建的是“类名或接口名”的子类对象，该子类名字不知道，所以叫匿名内部类。</li> <li>“{}”中可以重写父类的方法，也可以定义自己的方法。</li> <li>使用方法
+(1) 直接作为对象使用。
+(2) 用“类名或接口名”中的父类或接口类型引用接收该对象。</li> <li>匿名内部类不能定义构造器，因为类名是匿名的，写不出构造器。但是匿名类任然有编译器默认提供的无参构造器。</li> <li>当匿名内部类创建的是一个类的对象时
+&quot;()&quot;可以给父类构造器传参
+当创建的是接口的子类对象时
+&quot;()&quot;就没有用了。</li> <li>匿名内部类访问作用域内部的局部变量,<strong>该局部变量是常量</strong>
+该变量在作用域的其他使用场景也是作为常量吗？还是说只在内部类中作为常量。</li> <li>用途
+(1) 作为返回值
+(2) 作为形式参数</li></ol> <h2 id="五、-lambda表达式"><a href="#五、-lambda表达式" class="header-anchor">#</a> 五、 lambda表达式</h2> <blockquote><p>lambda表达式是Java8的一个新特性，可以取代接口的匿名内部类，写出更简洁的代码。</p></blockquote> <ol><li>语法和基本使用</li></ol> <p>形参列表：强制子类实现的抽象方法的形参列表
+“{}”：重写抽象方法的方法体。</p> <div class="language- extra-class"><pre><code>能够用lambda表达式创建子类对象的接口必须是功能接口(FunctionalInterface)
+&gt; 功能接口的概念：
+&gt; 指的是接口中，有且仅有一个强制子类实现的抽象方法的接口。、
+
+功能接口只有一个方法吗？只有一个抽象方法吗？
+    (1) 功能接口中可以有默认方法和静态方法。
+    (2) 如果一个抽象方法可以用Object类的某个方法作为默认实现，那么该抽象方法就不会强制子类实现。
+</code></pre></div><ol start="2"><li><p>类型推断的方式
+(1) 直接用父类接口引用接收
+(2) 类似于强制类型转换
+((接口的名字) lambda表达式)</p> <p>(3) 借助形参的数据类型（lambda表达式作为参数）
+(4) 借助方法的返回值类型（lambda表达式作为返回值）</p></li> <li><p>简化
+(1) &quot;(形参列表)&quot;中的形式参数数据类型可以省略。
+(2) “{}” 如果重写的方法体只有一条语句，就可以省略，如果这一句是return语句，可以直接省略return。
+(3) 方法引用
+用一个已经实现的方法作为lambda表达式抽象方法的实现
+I. 返回值类型
+功能接口中的抽象方法的
+返回值类型是void或基本数据类型，必须保持一致。
+返回值类型是引用数据类型，可以保持一致和返回它的子类。
+II.调用格式：不省略“-&gt;”
+(形参列表) -&gt; 已实现方法的调用(形参列表);
+III.调用格式：省略“-&gt;”
+已实现方法的归属者:: 已实现的方法的方法名;
+已实现方法的归属者：静态方法属于类，成员方法属于对象</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/skills/JavaSE/Thread.html" class="prev">
+        Thread
+      </a></span> <span class="next"><a href="/blog/skills/JavaSE/反射.html">
+        反射
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.47fa0ee6.js" defer></script><script src="/blog/assets/js/3.08356745.js" defer></script><script src="/blog/assets/js/47.3b2e491e.js" defer></script>
+  </body>
+</html>

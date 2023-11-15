@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java常用API | 琅玕的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="个人编程技术分享">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.3aadf512.css" as="style"><link rel="preload" href="/blog/assets/js/app.47fa0ee6.js" as="script"><link rel="preload" href="/blog/assets/js/3.08356745.js" as="script"><link rel="preload" href="/blog/assets/js/45.0567c80f.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.acf34bf9.js"><link rel="prefetch" href="/blog/assets/js/11.8c03c2e4.js"><link rel="prefetch" href="/blog/assets/js/12.fb0988f5.js"><link rel="prefetch" href="/blog/assets/js/13.6e265d6e.js"><link rel="prefetch" href="/blog/assets/js/14.7b60b543.js"><link rel="prefetch" href="/blog/assets/js/15.d9e9bd6e.js"><link rel="prefetch" href="/blog/assets/js/16.b7893bb0.js"><link rel="prefetch" href="/blog/assets/js/17.4773109c.js"><link rel="prefetch" href="/blog/assets/js/18.459a270b.js"><link rel="prefetch" href="/blog/assets/js/19.d3c7faae.js"><link rel="prefetch" href="/blog/assets/js/2.da13ccd9.js"><link rel="prefetch" href="/blog/assets/js/20.a4baf78a.js"><link rel="prefetch" href="/blog/assets/js/21.a354fd1b.js"><link rel="prefetch" href="/blog/assets/js/22.e4d3b9a8.js"><link rel="prefetch" href="/blog/assets/js/23.627cbf1d.js"><link rel="prefetch" href="/blog/assets/js/24.7a44cb5b.js"><link rel="prefetch" href="/blog/assets/js/25.6e3b28f9.js"><link rel="prefetch" href="/blog/assets/js/26.f9b3152b.js"><link rel="prefetch" href="/blog/assets/js/27.784b605c.js"><link rel="prefetch" href="/blog/assets/js/28.4b72525f.js"><link rel="prefetch" href="/blog/assets/js/29.03a090ad.js"><link rel="prefetch" href="/blog/assets/js/30.87f31b47.js"><link rel="prefetch" href="/blog/assets/js/31.32d8ae6d.js"><link rel="prefetch" href="/blog/assets/js/32.bfad371d.js"><link rel="prefetch" href="/blog/assets/js/33.647699a4.js"><link rel="prefetch" href="/blog/assets/js/34.5cb04a9d.js"><link rel="prefetch" href="/blog/assets/js/35.b5d4b577.js"><link rel="prefetch" href="/blog/assets/js/36.29ac4304.js"><link rel="prefetch" href="/blog/assets/js/37.52204065.js"><link rel="prefetch" href="/blog/assets/js/38.6a6c7f56.js"><link rel="prefetch" href="/blog/assets/js/39.307f9452.js"><link rel="prefetch" href="/blog/assets/js/4.64cbfc8a.js"><link rel="prefetch" href="/blog/assets/js/40.c52cb9af.js"><link rel="prefetch" href="/blog/assets/js/41.9484b6bc.js"><link rel="prefetch" href="/blog/assets/js/42.7c1e3494.js"><link rel="prefetch" href="/blog/assets/js/43.a1db7bff.js"><link rel="prefetch" href="/blog/assets/js/44.ebebaf80.js"><link rel="prefetch" href="/blog/assets/js/46.a6dd9b06.js"><link rel="prefetch" href="/blog/assets/js/47.3b2e491e.js"><link rel="prefetch" href="/blog/assets/js/48.a0987d85.js"><link rel="prefetch" href="/blog/assets/js/49.7e07c884.js"><link rel="prefetch" href="/blog/assets/js/5.c20cef8f.js"><link rel="prefetch" href="/blog/assets/js/50.4977422c.js"><link rel="prefetch" href="/blog/assets/js/51.7a95ac4e.js"><link rel="prefetch" href="/blog/assets/js/52.52e556b0.js"><link rel="prefetch" href="/blog/assets/js/53.4f36d2ba.js"><link rel="prefetch" href="/blog/assets/js/54.2c32102f.js"><link rel="prefetch" href="/blog/assets/js/6.bcbc4d6f.js"><link rel="prefetch" href="/blog/assets/js/7.53614ddc.js"><link rel="prefetch" href="/blog/assets/js/8.2353748c.js"><link rel="prefetch" href="/blog/assets/js/9.4cb3a25c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.3aadf512.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">琅玕的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/skills/" class="nav-link router-link-active">
+  学习
+</a></div><div class="nav-item"><a href="/blog/share/" class="nav-link">
+  资源分享
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/skills/" class="nav-link router-link-active">
+  学习
+</a></div><div class="nav-item"><a href="/blog/share/" class="nav-link">
+  资源分享
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/blog/skills/IoT" class="sidebar-heading clickable"><span>IoT</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/IoT/基于NodeMcu的智慧生态农业系统设计.html" class="sidebar-link">基于NodeMcu的智慧生态农业系统设计</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/JavaSE" class="sidebar-heading clickable router-link-active open"><span>JavaSE</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/JavaSE/File类和IO流.html" class="sidebar-link">File类和IO流</a></li><li><a href="/blog/skills/JavaSE/Java基础手写笔记.html" class="sidebar-link">/skills/JavaSE/Java基础手写笔记.html</a></li><li><a href="/blog/skills/JavaSE/Java常用API.html" class="active sidebar-link">Java常用API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#一、object" class="sidebar-link">一、Object</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#_1-public-final-class-getclass" class="sidebar-link">1. public final Class getClass()</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#_2-public-string-tostring" class="sidebar-link">2. public String toString()</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#_3-public-boolean-equals-object-object" class="sidebar-link">3. public boolean equals(Object object)</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#_4-public-int-hashcode" class="sidebar-link">4. public int hashCode()</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#_5-pretected-void-finalize" class="sidebar-link">5. pretected void finalize()</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#_6-pretected-object-clone" class="sidebar-link">6. pretected Object clone()</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#二、string" class="sidebar-link">二、String</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#字符串常量池" class="sidebar-link">字符串常量池</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#intern方法" class="sidebar-link">intern方法</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#三、排序" class="sidebar-link">三、排序</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#自然排序" class="sidebar-link">自然排序</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#比较器排序" class="sidebar-link">比较器排序</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#四、可变字符串" class="sidebar-link">四、可变字符串</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#stringbuffer" class="sidebar-link">StringBuffer</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#stringbuilder" class="sidebar-link">StringBuilder</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#五、包装类型" class="sidebar-link">五、包装类型</a></li><li class="sidebar-sub-header"><a href="/blog/skills/JavaSE/Java常用API.html#六、异常" class="sidebar-link">六、异常</a></li></ul></li><li><a href="/blog/skills/JavaSE/Thread.html" class="sidebar-link">Thread</a></li><li><a href="/blog/skills/JavaSE/内部类.html" class="sidebar-link">内部类</a></li><li><a href="/blog/skills/JavaSE/反射.html" class="sidebar-link">反射</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/DSDB" class="sidebar-heading clickable"><span>DSDB</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/DSDB/Collection.html" class="sidebar-link">Java的集合类</a></li><li><a href="/blog/skills/DSDB/HTTP&amp;Tomcat.html" class="sidebar-link">HTTP&amp;Tomcat</a></li><li><a href="/blog/skills/DSDB/JDBC.html" class="sidebar-link">JDBC</a></li><li><a href="/blog/skills/DSDB/Map.html" class="sidebar-link">Map</a></li><li><a href="/blog/skills/DSDB/Maven.html" class="sidebar-link">Maven</a></li><li><a href="/blog/skills/DSDB/Mybatis.html" class="sidebar-link">Mybatis</a></li><li><a href="/blog/skills/DSDB/SQL.html" class="sidebar-link">SQL</a></li><li><a href="/blog/skills/DSDB/Stream.html" class="sidebar-link">Stream</a></li><li><a href="/blog/skills/DSDB/前端.html" class="sidebar-link">前端</a></li><li><a href="/blog/skills/DSDB/数据库索引.html" class="sidebar-link">数据库索引</a></li><li><a href="/blog/skills/DSDB/连接池.html" class="sidebar-link">/skills/DSDB/连接池.html</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/JavaEE&amp;Spring" class="sidebar-heading clickable"><span>JavaEE&amp;Spring</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/JavaEE&amp;Spring/MyBatis-Spring.html" class="sidebar-link">MyBatis - Spring、Spring事务</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/Request&amp;Response.html" class="sidebar-link">Request &amp; Response</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/Servlet.html" class="sidebar-link">Servlet</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringAOP.html" class="sidebar-link">Spring AOP</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringBoot.html" class="sidebar-link">SpringBoot</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringIOC.html" class="sidebar-link">Spring IOC</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/SpringMVC.html" class="sidebar-link">Spring MVC</a></li><li><a href="/blog/skills/JavaEE&amp;Spring/设计模式.html" class="sidebar-link">设计模式</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/微服务" class="sidebar-heading clickable"><span>微服务</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/微服务/ElasticSearch.html" class="sidebar-link">ElasticSearch</a></li><li><a href="/blog/skills/微服务/Gateway.html" class="sidebar-link">Gateway</a></li><li><a href="/blog/skills/微服务/MapStruct.html" class="sidebar-link">MapStruct</a></li><li><a href="/blog/skills/微服务/Mybatis-Plus.html" class="sidebar-link">Mybatis-Plus</a></li><li><a href="/blog/skills/微服务/Nginx.html" class="sidebar-link">Nginx</a></li><li><a href="/blog/skills/微服务/Redis.html" class="sidebar-link">Redis</a></li><li><a href="/blog/skills/微服务/Redis在Java项目中的使用.html" class="sidebar-link">Redis在Java项目中的使用</a></li><li><a href="/blog/skills/微服务/RocketMQ.html" class="sidebar-link">RocketMQ</a></li><li><a href="/blog/skills/微服务/SpringCloud.html" class="sidebar-link">SpringCloud</a></li><li><a href="/blog/skills/微服务/微服务.html" class="sidebar-link">微服务</a></li><li><a href="/blog/skills/微服务/微服务架构和单体架构.html" class="sidebar-link">微服务架构和单体架构</a></li><li><a href="/blog/skills/微服务/秒杀.html" class="sidebar-link">秒杀</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/skills/面试" class="sidebar-heading clickable"><span>面试</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/skills/面试/面经.html" class="sidebar-link">面经</a></li><li><a href="/blog/skills/面试/面试准备.html" class="sidebar-link">面试准备</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java常用api"><a href="#java常用api" class="header-anchor">#</a> Java常用API</h1> <h2 id="一、object"><a href="#一、object" class="header-anchor">#</a> 一、Object</h2> <blockquote><p>Object类是所有类继承层次的祖先类</p></blockquote> <h3 id="_1-public-final-class-getclass"><a href="#_1-public-final-class-getclass" class="header-anchor">#</a> 1. public final Class getClass()</h3> <blockquote><p>提供一种获取Class对象的方式
+Class对象（运行时类对象）：封装了该类的类型信息。比如类的名字、所处包、成员、静态成员、构造器等。是某个类在其类加载时期，由JVM在堆上自动创建生成的一个对象（Class对象）。由于类加载只有一次，所以类的Class对象也是唯一的。</p></blockquote> <p>可以调用getClass()方法通过“==”判断两个对象的类型是否一致。
+Class API实际上是反射的原理。
+getName(): 获取全限定类名
+getSimpleName(): 获取简单类名</p> <h3 id="_2-public-string-tostring"><a href="#_2-public-string-tostring" class="header-anchor">#</a> 2. public String toString()</h3> <p>toString()的作用：
+(1) 返回该对象的字符串表示（打印对象属性取值）。
+(2) 建议所有子类重写次方法。
+Object类当中的toString方法默认实现</p> <div class="language- extra-class"><pre><code>return 全限定类名 @ 该对象的十六进制地址值字符串
+return this.getClass().getName() + &quot;@&quot; + Integer.toHexString(hasCode());
+</code></pre></div><p>(3) 可以alt + insert快捷键生成toString()重写。</p> <h3 id="_3-public-boolean-equals-object-object"><a href="#_3-public-boolean-equals-object-object" class="header-anchor">#</a> 3. public boolean equals(Object object)</h3> <p>重写equals方法的原则：
+(1) 自反性：自己和自己比较一定返回true。
+(2) 排他性：当对比的不是同种类型的对象或是一个null时，默认返回false
+(3) 对称性：
+(4) 传递性：
+(5) 一致性：</p> <div class="language-java extra-class"><pre class="language-java"><code>    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">Object</span> o<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//1.自反性</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> o<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//2.排他性</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>o <span class="token keyword">instanceof</span> <span class="token class-name">Animal</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//3.属性取值比较</span>
+        <span class="token class-name">Animal</span> a <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Animal</span><span class="token punctuation">)</span> o<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>age <span class="token operator">!=</span> a<span class="token punctuation">.</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>name <span class="token operator">!=</span> a<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> price <span class="token operator">==</span> a<span class="token punctuation">.</span>price<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-public-int-hashcode"><a href="#_4-public-int-hashcode" class="header-anchor">#</a> 4. public int hashCode()</h3> <blockquote><p>哈希映射：将一组关键字<strong>映射</strong>到一个有限的、连续的地址集（区间）上。
+hashCode()方法：就是一个哈希函数，用于计算哈希值。</p></blockquote> <ol><li><p>为什么要同时重写equals方法和hashCode方法？为什么equals返回true时hashCode返回值必须一致？
+因为哈希表中key值是唯一的不允许重复，如果插入一个相同的key，那么他会覆盖原来的key，既然是覆盖，那么新的key和旧的key插入的位置应该一致，所以他们的哈希值应该一致。所以，当两个对象“相等”时，他们的插入位置应该一致，哈希值应该一致。</p></li> <li><p>Object类的hashCode方法默认实现会返回该对象的十进制地址值。Object类的默认hashCode方法是一个本地方法，一般是通过将该对象的内部地址转换成一个int整数来实现的。</p></li></ol> <h3 id="_5-pretected-void-finalize"><a href="#_5-pretected-void-finalize" class="header-anchor">#</a> 5. pretected void finalize()</h3> <h3 id="_6-pretected-object-clone"><a href="#_6-pretected-object-clone" class="header-anchor">#</a> 6. pretected Object clone()</h3> <ol><li><p>clone方法使用步骤：
+(1) 重写访问权限
+Object类的访问权限是protected，子类要想在该类的外部调用clone方法，就要在该类中重写clone方法的访问权限。</p> <p>(2) 重写clone方法的方法体
+一般不需要，</p> <p>(3) 重写方法的返回值类型，从Object改为自身类型
+(4) 实现接口java.lang.Cloneable，表示该类允许进行克隆。
+Cloneable接口是一个空接口，实现了就允许做XX操作，不实现就不允许甚至抛出异常，这样的接口称之为“标记接口”。</p></li> <li><p>克隆操作的两个概念
+(1) 浅克隆/浅拷贝
+Object类中的clone方法的默认实现就是浅克隆/浅拷贝。
+引用数据类型的成员变量拷贝的是原来的引用（对象的地址值），仍然指向原来的对象。
+(2) 深克隆/深拷贝
+无论对象中有无引用数据类型的成员变量，都要确保克隆后得到完全独立的新对象。
+深克隆的一种实现方法：
+I. 深克隆是在浅克隆的基础上实现的，首先要做浅克隆。
+II. 将对象中引用指向的对象再克隆一个新对象
+III. 将克隆对象的克隆引用指向克隆后的新对象。
+（II、III通过重写原对象的clone方法来实现。在源对象的clone方法中执行引用所指向的对象的clone方法，并赋值给“克隆后的对象”。）</p></li></ol> <h2 id="二、string"><a href="#二、string" class="header-anchor">#</a> 二、String</h2> <p>String对象时不可变的，为什么不可变？</p> <ol><li>String类的核心成员char类型数组value是privatefinal修饰的，不能在外部直接访问修改，也禁止继承，避免了继承后被修改。</li> <li>所有的String方法都很小心的没有去改动value数组里的元素，且没有对外暴露这个数组。</li> <li>String类所有用数组传参赋值1的构造器，都不会直接用传参的数组给value赋值，而是将该参数拷贝一份，然后将拷贝的数组赋值给value，这样可以防止外部代码通过修改传入的数组来改变String的内容。</li></ol> <h3 id="字符串常量池"><a href="#字符串常量池" class="header-anchor">#</a> 字符串常量池</h3> <blockquote><p>字符串常量池用于存储所有的字符串字面值对象（的引用），每当代码中出现一个字符串字面量对象，JVM就会检查字符串常量池，如果已存在相同内容的字符串，则不会创建新的对象，而是返回指向已有对象的引用。如果不存在相同内容的字符串，则创建新的字符串对象并将引用放入字符串常量池。</p></blockquote> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">String</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>上述过程共创建了两个对象
+(1) 代码中第一次运行到字面值&quot;abc&quot;时，会在堆上创建一个该字面值String对象，然后将引用存入常量池。在该行代码中，此对象没有引用指向它。
+(2) new关键字表示在堆上面创建一个新的对象。
+(1)和(2)中创建的对象共享一个value数组。</p> <h3 id="intern方法"><a href="#intern方法" class="header-anchor">#</a> intern方法</h3> <ol><li>调用者是一个String对象，使用该方法，首先要判断字符串常量池是否已经存在和调用者String对象内容相同的String对象。
+(1) 如果存在，就直接返回这个对象。
+(2) 如果不存在，就把调用intern方法的String对象的引用存入字符串常量池，这样它就从非拘留字符串变成了拘留字符串，并且将该拘留字符串返回。</li></ol> <h2 id="三、排序"><a href="#三、排序" class="header-anchor">#</a> 三、排序</h2> <h3 id="自然排序"><a href="#自然排序" class="header-anchor">#</a> 自然排序</h3> <blockquote><p>让某个类实现java.lang.Comparable接口，重写compareTo方法表示排序规则，实现该类对应的对象容器中元素按从小到大的排序方式。称之为“自然排序”。</p></blockquote> <h3 id="比较器排序"><a href="#比较器排序" class="header-anchor">#</a> 比较器排序</h3> <p>带比较器的排序方法：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span><span class="token class-name">Comparator</span><span class="token punctuation">)</span>
+<span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>collection<span class="token punctuation">,</span><span class="token class-name">Comparator</span><span class="token punctuation">)</span>
+</code></pre></div><blockquote><p>通过匿名内部类或lambda表达式创建一个实现了Comparator接口的对象，将该对象作为参数传入Arrays.sort()方法，该匿名类重写了Comparator的compare方法（重写了比较规则）。</p></blockquote> <h2 id="四、可变字符串"><a href="#四、可变字符串" class="header-anchor">#</a> 四、可变字符串</h2> <blockquote><p>所谓可变字符串，就是指可以在原先字符串的基础上，直接修改字符串内容的字符串对象。这样在需要频繁修改字符串内容的场景中，就不会频繁创建新的对象了，性能就会更加优秀。StringBuffer和StringBuilder都是抽象类AbstractStringBuilder的子类。</p></blockquote> <p>主要成员变量：
+(1) char[] value; 用于存储字符串内容。value数组被称为字符串缓冲区，value数组的长度被称为“字符串缓冲区的容量capacity”
+(2) int count; 记录当前已使用的字符的个数，即可变字符串当前的实际字符串长度。</p> <h3 id="stringbuffer"><a href="#stringbuffer" class="header-anchor">#</a> StringBuffer</h3> <p><strong>1. StringBuffer构造器</strong></p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">//无参构造器</span>
+<span class="token keyword">public</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//指定容量</span>
+<span class="token keyword">public</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//指定字符串内容</span>
+<span class="token keyword">public</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token class-name">String</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>这些构造器都是在创建对象时，指出字符串缓冲区大小
+(1) 无参构造器，字符串缓冲区大小默认是16。
+(2) int单参构造器，字符串缓冲区初始大小为指定的int值。
+(3) String单参构造器，字符串缓冲区大小初始大小为指定字符串长度+16。</p> <p><strong>2. 字符串缓冲区扩容机制源码解析：</strong>
+StringBuffer对象在执行append方法拼接字符串时，可能会遇到value数组长度（缓冲区大小）不够的情况，所以在拼接之前，要确保value数组长度够用，就要执行ensureCapacityInternal(int minimumCapacity)方法，其中int minimumCapacity = count + len;(<strong>最小容量minimumCapacity</strong>等于原字符串实际长度加拼接的字符串长度，也就是新字符串长度)</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token class-name">AbstractStringBuilder</span> <span class="token function">append</span><span class="token punctuation">(</span><span class="token class-name">String</span> str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>str <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token function">appendNull</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> len <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">ensureCapacityInternal</span><span class="token punctuation">(</span>count <span class="token operator">+</span> len<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//count为原字符串长度，len为拼接的字符串长度。</span>
+    str<span class="token punctuation">.</span><span class="token function">getChars</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> len<span class="token punctuation">,</span> value<span class="token punctuation">,</span> count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    count <span class="token operator">+=</span> len<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>当最小容量小于0时，就不用执行扩容机制</p> <div class="language-java extra-class"><pre class="language-java"><code>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">ensureCapacity</span><span class="token punctuation">(</span><span class="token keyword">int</span> minimumCapacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>minimumCapacity <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token function">ensureCapacityInternal</span><span class="token punctuation">(</span>minimumCapacity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>当最小容量大于value数组长度时，才执行扩容机制，执行newCapacity(int minCapacity)方法确定扩容后的数组长度，将原来的字符数组复制到新创建的字符数组中，然后value引用指向这个新数组。</p> <div class="language-java extra-class"><pre class="language-java"><code>    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">ensureCapacityInternal</span><span class="token punctuation">(</span><span class="token keyword">int</span> minimumCapacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// overflow-conscious code</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>minimumCapacity <span class="token operator">-</span> value<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            value <span class="token operator">=</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">copyOf</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span>
+                    <span class="token function">newCapacity</span><span class="token punctuation">(</span>minimumCapacity<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>将原先value数组长度的两倍+2作为新数组的长度
+如果这个长度小于最小容量，那么就把最小容量作为新数组的长度。</p> <div class="language-java extra-class"><pre class="language-java"><code>    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token constant">MAX_ARRAY_SIZE</span> <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token constant">MAX_VALUE</span> <span class="token operator">-</span> <span class="token number">8</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">newCapacity</span><span class="token punctuation">(</span><span class="token keyword">int</span> minCapacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// overflow-conscious code</span>
+        <span class="token keyword">int</span> newCapacity <span class="token operator">=</span> <span class="token punctuation">(</span>value<span class="token punctuation">.</span>length <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>newCapacity <span class="token operator">-</span> minCapacity <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            newCapacity <span class="token operator">=</span> minCapacity<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>newCapacity <span class="token operator">&lt;=</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token constant">MAX_ARRAY_SIZE</span> <span class="token operator">-</span> newCapacity <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token operator">?</span> <span class="token function">hugeCapacity</span><span class="token punctuation">(</span>minCapacity<span class="token punctuation">)</span>
+            <span class="token operator">:</span> newCapacity<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h3 id="stringbuilder"><a href="#stringbuilder" class="header-anchor">#</a> StringBuilder</h3> <h2 id="五、包装类型"><a href="#五、包装类型" class="header-anchor">#</a> 五、包装类型</h2> <blockquote><p>所谓包装类型，就是将基本数据类型包装成引用数据类型，进而得到对应的对象。</p></blockquote> <h2 id="六、异常"><a href="#六、异常" class="header-anchor">#</a> 六、异常</h2> <div class="language-mermaid extra-class"><pre class="language-mermaid"><code><span class="token keyword">graph</span> TD<span class="token punctuation">;</span>
+A<span class="token text string">[Throwable]</span> <span class="token arrow operator">--&gt;</span> B<span class="token text string">[Error]</span>
+A <span class="token arrow operator">--&gt;</span> C<span class="token text string">[Exception]</span>
+C <span class="token arrow operator">--&gt;</span> D<span class="token text string">[子类]</span>
+C <span class="token arrow operator">--&gt;</span> E<span class="token text string">[RuntimeException]</span>
+</code></pre></div><ol><li><p>在Java中，<strong>java.lang.Throwable</strong>类是Java一切错误和异常的祖先类
+Throwable又可以分为两大类：
+<strong>(1) java.lang.Error</strong>
+Error是严重错误，它描述了Java程序运行时，JVM内部错误和资源耗尽错误。对于Error程序自己是无能为力的，仅靠程序自身是无法恢复和预防，于是程序只能尽量安全的保存数据，然后终止程序，并通知用户去解决。
+<strong>(2) java.lang.Exception</strong>
+Exception是一般异常，它描述的是Java程序运行时可以被程序捕获并处理的问题。
+<strong>I.RuntimeException（运行时异常）</strong>
+指的是在程序运行期间，发生的一般问题。运行时异常有以下特点：
+1）运行时异常所描述的问题，程序无法在编译时期检查和预料，必须等到程序运行后才可能会出现这个问题，
+2）表现在代码上就是，即便程序中有可能抛出运行时异常，但不做任何处理程序也能正常编译和启动。
+典型的运行时异常有：空指针异常、除0异常、数组下标越界等。</p> <p><strong>II.CheckedException（编译时异常/受检查的异常）</strong>
+Exception的非RuntimeException子类，都属于编译时异常，或受检查的异常（CheckedException）。编译时异常有以下特点：
+1）编译时异常所描述的问题，需要在程序编译时检查和预判。但异常肯定是要等到程序运行时期才可能被抛出，编译时异常，相当于需要提前预判和处理的异常。
+2）表现在代码上就是：如果程序中可能出现编译时异常，那么就必须在代码中明确的处理该异常，否则代码不能通过编译。
+典型的编译时异常有：克隆不支持异常（CloneNotSupportedException）以及解析异常（ParseException）等。</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/skills/JavaSE/Java基础手写笔记.html" class="prev">
+        /skills/JavaSE/Java基础手写笔记.html
+      </a></span> <span class="next"><a href="/blog/skills/JavaSE/Thread.html">
+        Thread
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.47fa0ee6.js" defer></script><script src="/blog/assets/js/3.08356745.js" defer></script><script src="/blog/assets/js/45.0567c80f.js" defer></script>
+  </body>
+</html>
